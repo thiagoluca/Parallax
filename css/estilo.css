@@ -5,7 +5,6 @@ body, html{
     font: 16px "Lato" sans-serife;
     color: #777777;
     height: 100%;
-    border: 1px solid red;
 }
 
 .conteudo{
@@ -16,16 +15,21 @@ body, html{
 }
 
 h3{
-    text-transform: uppercase;
+    
     color: #111111;
     text-align: center;
 }
 
 /********** Efeito Parallax *************/
 
-.caixa1, .caixa2{
-    border: 1px solid red;
+.caixa1, .caixa2, .caixa3, .caixa4{
+    position: relative;
     height: 100%;
+    opacity: 0.8;
+    background-repeat: no-repeat; /* Configurar para não repetir a imagem */
+    background-size: cover; /* Estender a imagem de ponta-a-ponta */
+    background-position: center; /* Sempre centraliza a imagem mesmo se diminuir o espaçamento da tela, ou dar zoom */
+    background-attachment: fixed; /* Ele que fixa a imagem de fundo, dando o efeito Parallax */
 }
 .caixa1{
     background-image: url(../imagens/imagem1.jpg);    
@@ -34,3 +38,32 @@ h3{
 .caixa2{
     background-image: url(../imagens/imagem2.jpg);
 }
+
+.caixa3{
+    background-image: url(../imagens/imagem3.jpg);
+}
+
+.caixa4{
+    background-image: url(../imagens/imagem4.jpg);
+}
+
+.conteudo-titulo{ /* Cria uma linha centralizada para manter o "span.titulo" centralizado */
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+
+}
+
+.conteudo-titulo span.titulo{
+    color: #ffffff;
+    background-color: #111111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+
+/* */
