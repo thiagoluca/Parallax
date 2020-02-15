@@ -1,201 +1,36 @@
-/* Limpar formatação padrão */
+/* configurações padrão */
 
-*{
+body, html{
     margin: 0;
-    padding: 0;
-}
-
-body{
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    background: #ffffff url(../imagens/bg.png);
-    margin: 15px;
-
-}
-
-#container{ /* Engloba toda área de conteudo */   
-    background: #ede9cc url(../imagens/bg-container.png)top center repeat-y;
-    margin: 0em auto; /* Cntainer fica centralizado  */
-    min-width: 740px;  /* Limita a largura minima do ste redução até 740px  */
-    max-width: 1180px; /* Definir a largra maxima do site */
-}
-
-#topo{
-    position: relative;
-    background: #dbc87d;
-    height: 15.4em;
-    min-height: 250px;
-}
-
-#area-logo{
-    position: absolute;
-    background: url(../imagens/topo-imagem-principal2.png) no-repeat;
-    width: 100%;
-    height: 250px;
-    top: 0em;
-    left: 0em;
-    z-index: 1; /* fica por baixo  */
-}
-
-.logo a{
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    z-index: 3;
-    background: url(../imagens/logo.png) no-repeat;
-    width: 151px;
-    height: 66px;
-    text-indent: -9000px;
-}
-
-#area-menu{
-    position: absolute;
-    top: 0em;
-    right: 0em;
-    background: url(../imagens/topo-imagem-lateral.png) no-repeat;
-    width: 450px;
-    height: 250px;
-    z-index: 2; /* sobre-poe a area da imagem */
-}
-
-#conteudo-menu{
-    margin-left: 90px; /* delimitação do conteudo */
-    margin-right: 15px;
-    margin-top: 15px; /* limite de espaço na area superior do conteudo */
-}
-
-#menu-locais{
-    border-bottom: 1px solid #b5ab56;
-    border-top: 1px solid #b5ab56;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 0.7em;
-    color: #8b8448;
-}
-
-#menu-locais .locais{
-    float: left;
-    line-height: 2.1em;
-}
-
-a {
-    text-decoration: none;
-}
-
-a.reserva{ /* para pder usar reserva dentro do formulário ate mesmo em outra pagina " */
-    text-transform: uppercase; 
-    background: #a29750;
-    color: #fff5b0;
-    padding: 5px 10px; /*5px sup e inf e 10px nas laterais  */
-    float: right;
-}
-
-#menu{
-    margin-top: 15px; 
-
-}
-
-ul{ 
-    list-style: none;
-
-}
-
-ul#navegacao{
-    float: left;
-
-}
-
-ul#navegacao a{
-    text-transform: uppercase;
-    font-size: 0.8em;
-    padding: 5px;
-    color: #6e672c;
-    line-height: 30px;
-}
-
-ul#navegacao a:hover{
-    background: #fdf6be;
-}
-
-.depoimento{ /* Posicionamento depoimento a direita da pagina */
-    width: 226px;
-    height: 164px;
-    float: right;
-}
-
-/* Área de conteudo */
-
-#area-principal{
-    float: left;
-    width: 50%; /* Por cer um Layout Liquido que se usa "%". */
-    background: url(../imagens/bg-area-principal.png) top left repeat-x;
-    padding: 15px 0px;
-}
-
-#area-lateral{
-    float: right;
-    width: 50%;
-    background: url(../imagens/bg-area-lateral.png) top left repeat-x;
-    padding: 20px 0px;
+    font: 16px "Lato" sans-serife;
+    color: #777777;
+    height: 100%;
+    border: 1px solid red;
 }
 
 .conteudo{
-    margin: 0 auto;
-    width: 90%;
+    color: #777777;
+    background-color: white;
+    text-align: justify;
+    padding: 50px 80px;
 }
 
-#rodape{   
-    clear: both;
-    padding: 16px; /* define o espaço interno, a idependencia do rodapé */
-    background: #fff url(../imagens/bg-rodape.png) repeat-x top;
-    color: #7d7640;
-
+h3{
+    text-transform: uppercase;
+    color: #111111;
+    text-align: center;
 }
 
-/* Formatação de textos */
+/********** Efeito Parallax *************/
 
-h2{
-    color: #7d7640;
-    font-size: 1.1x;
-    padding: 5px 0px;
-    
+.caixa1, .caixa2{
+    border: 1px solid red;
+    height: 100%;
+}
+.caixa1{
+    background-image: url(../imagens/imagem1.jpg);    
 }
 
-/* Formatar lista da área lateral */
-
-#beneficios li{
-    padding: 8px;
-    border-bottom: 1px solid #f3efcb;
-    height: 6em;
+.caixa2{
+    background-image: url(../imagens/imagem2.jpg);
 }
-
-#beneficios li a img{
-    float: left; /* Cola a imagem no canto esquerdo */
-    margin-right: 8px; /* espaçamento entre "img" e "p" */        
-}
-
-#beneficios li a p{
-    font-size: 0.8em;
-    color: #000000;                 
- }
-
-#beneficios li a h3{
-   font-size: 1em;
-   padding: 0;      
-   color: #615b2b;
-   padding: 5px 0;
-   background: url(../imagens/ornamento.png) no-repeat center right;           
-}
-
-#beneficios li:hover{
-   background: #f6f3d6;   
-   cursor: pointer;
-}
-
-/* Rodapé */
-#containe-rodape{
- background: #294c71;
- padding: 20px;
-}
-
-
-/*  */
